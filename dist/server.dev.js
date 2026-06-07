@@ -6,11 +6,10 @@ var express = require('express');
 
 var cors = require('cors');
 
-require('dotenv').config();
+require('dotenv').config(); // const dns = require('node:dns/promises');
+// dns.setServers(['1.1.1.1', '8.8.8.8']);
 
-var dns = require('node:dns/promises');
 
-dns.setServers(['1.1.1.1', '8.8.8.8']);
 var port = process.env.PORT || 5000;
 
 var connectDB = require('./config/db');
